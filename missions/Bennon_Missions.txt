@@ -39,9 +39,11 @@ bennon_1 = {
 			912 = { #Anvilwright
 				add_permanent_claim = ROOT
 			}
+			## Dwarven Tunnels
 			8010 = { #Silverhome
 				add_permanent_claim = ROOT
 			}
+			## Dwarven Tunnesl
 			308 = { #Silverforge Hall
 				add_permanent_claim = ROOT
 			}
@@ -274,9 +276,6 @@ bennon_2 = {
 			teagansfield_area = {
 				add_permanent_claim = ROOT
 			}
-			silent_repose_area = {
-				add_permanent_claim = ROOT
-			}
 			311 = { #Ashfield
 				add_permanent_claim = ROOT
 			}
@@ -292,7 +291,9 @@ bennon_2 = {
 				area = north_ibevar_area
 				area = south_ibevar_area
 				area = teagansfield_area
+				## Dwarven Tunnels
 				area = silent_repose_area
+				## Dwarven Tunnels
 				province_id = 314
 				province_id = 311
 			}
@@ -313,10 +314,12 @@ bennon_2 = {
 				type = all
 				owned_by = ROOT
 			}
+			## Dwarven Tunnels
 			silent_repose_area = {
 				type = all
 				owned_by = ROOT
 			}
+			## Dwarven Tunnels
 			314 = {
 				owned_by = ROOT
 			}
@@ -348,7 +351,9 @@ bennon_2 = {
 				area = north_ibevar_area
 				area = south_ibevar_area
 				area = teagansfield_area
+				## Dwarven Tunnels
 				area = silent_repose_area
+				## Dwarven Tunnels
 				area = bennonhill_area
 				province_id = 314
 				province_id = 311
@@ -379,10 +384,12 @@ bennon_2 = {
 					type = all
 					owned_by = ROOT
 				}
+				## Dwarven Tunnels
 				silent_repose_area = {
 					type = all
 					owned_by = ROOT
 				}
+				## Dwarven Tunnels
 				bennonhill_area = {
 					type = all
 					owned_by = ROOT
@@ -396,9 +403,11 @@ bennon_2 = {
 				912 = { #Anvilwright
 					owned_by = ROOT
 				}
-				8010 = { #silverhome
+				## Dwarven Tunnels
+				8010 = { #Ashfield
 					owned_by = ROOT
 				}
+				## Dwarven Tunnels
 				308 = { #Silverforge
 					owned_by = ROOT
 				}
@@ -759,17 +768,17 @@ bennon_5 = {
 		position = 1
 		required_missions = {}
 		trigger = {
-			if = {
-				limit = { has_dlc = "Mandate of Heaven" }
-				has_age_ability = ab_veterans_of_the_lilac_wars
-			}
-			else = {
-				NOT = { current_age = age_of_discovery }
+			# if = {
+			# 	limit = { has_dlc = "Mandate of Heaven" }
+			# 	has_age_ability = ab_veterans_of_the_lilac_wars
+			# }
+			#else = {
+			#	NOT = { current_age = age_of_discovery }
 				estate_loyalty = {
 					estate = estate_nobles
 					loyalty = 60
 				}
-			}
+			#}
 		}
 		effect = {
 			add_country_modifier = {
@@ -914,7 +923,7 @@ havoral_tutors_of_corin_group = {
 		trigger = {
 			religion = corinite
 			is_in_league_war = yes
-			in_league = corinite
+			in_or_leading_corinite_league = yes
 		}
 		effect = {
 			add_country_modifier = {
@@ -1252,7 +1261,9 @@ havoral_2 = {
 				area = north_ibevar_area
 				area = south_ibevar_area
 				area = teagansfield_area
+				## Dwarven Tunnels
 				area = silent_repose_area
+				## Dwarven Tunnels
 				area = bennonhill_area
 				province_id = 314
 				province_id = 311
@@ -1310,7 +1321,8 @@ havoral_2 = {
 						culture = esmari
 					}
 				}
-				silent_repose_area = {
+				## Dwarven Tunnels
+				bennonhill_area = {
 					type = all
 					owned_by = ROOT
 					OR = {
@@ -1321,6 +1333,7 @@ havoral_2 = {
 						culture = esmari
 					}
 				}
+				## Dwarven Tunnels
 				bennonhill_area = {
 					type = all
 					owned_by = ROOT
@@ -1362,7 +1375,8 @@ havoral_2 = {
 						culture = esmari
 					}
 				}
-				8010 = { #silverhome
+				## Dwarven Tunnels
+				8010 = {
 					owned_by = ROOT
 					OR = {
 						culture = havoric
@@ -1372,6 +1386,7 @@ havoral_2 = {
 						culture = esmari
 					}
 				}
+				## Dwarven Tunnels
 				308 = { #Silverforge
 					owned_by = ROOT
 					OR = {
@@ -1924,11 +1939,16 @@ havoral_4 = {
 		required_missions = { B66_the_greater_mountain_chain }
 		trigger = {
 			OR = {
-				war_with = A59
-				425 = {
-					owner = {
-						war_with = ROOT
+				OR = {
+					war_with = A59
+					425 = {
+						owner = {
+							war_with = ROOT
+						}
 					}
+				}
+				425 = {
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}
@@ -1954,10 +1974,16 @@ havoral_4 = {
 			}
 		}
 		trigger = {
-			corvurian_plains_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
+			OR = {
+				corvurian_plains_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				corvurian_plains_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = {
