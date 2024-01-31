@@ -1,7 +1,4 @@
 spriteTypes = {
-
-		
-
 	spriteType = {
 		name = "GFX_great_project_tungr_tunnel"	
 		texturefile = "gfx//interface//great_projects//great_project_tungr_tunnel.dds"
@@ -31,18 +28,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//great_project_anvilwright_tunnel.dds"
 	}
 	spriteType = {
-		name = "GFX_great_project_marrhold_tunnel_copy"	
-		texturefile = "gfx//interface//great_projects//great_project_tungr_tunnel.dds"
-	}
-	spriteType = {
-		name = "GFX_great_project_marrhold_tunnel"	
-		texturefile = "gfx//interface//great_projects//great_project_tungr_tunnel.dds"
-	}
-	spriteType = {
-		name = "GFX_great_project_marrhold_tunnel_natvirod2"	
-		texturefile = "gfx//interface//great_projects//great_project_tungr_tunnel.dds"
-	}
-	spriteType = {
 		name = "GFX_great_project_tungr_tunnel_copy"	
 		texturefile = "gfx//interface//great_projects//great_project_tungr_tunnel.dds"
 	}
@@ -50,6 +35,4 @@ spriteTypes = {
 		name = "GFX_great_project_tungr_tunnel_ranger"	
 		texturefile = "gfx//interface//great_projects//great_project_tungr_tunnel.dds"
 	}
-
-	
 }

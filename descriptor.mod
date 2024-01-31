@@ -12,8 +12,6 @@ dependencies={
 	"Anbennar: A Fantasy Total Conversion"
 	"Anbennar-PublicFork"
 }
-name="Dwarven Tunnels for Anbennar"
+name="Dwarven Tunnels for Anbennar - 1.36 update"
 picture="thumbnail.png"
-supported_version="1.34.*"
-path="C:/Users/Quinn/Documents/Paradox Interactive/Europa Universalis IV/mod/tunnel"
-remote_file_id="2903627076"
+supported_version="1.36.*"
