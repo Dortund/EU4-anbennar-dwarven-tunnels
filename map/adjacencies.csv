@@ -266,12 +266,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 3249;6140;sea;1644;-1;-1;-1;-1;
 3100;3136;canal;6000;-1;-1;-1;-1;great_merfolk_canal
 
-912;8003;canal;912;-1;-1;-1;-1;anvilwright_tunnel;;;
-8003;8004;canal;8003;-1;-1;-1;-1;newpassage_tunnel1;;;
-8004;263;canal;8004;-1;-1;-1;-1;newpassage_tunnel2;;;
-263;8012;canal;263;-1;-1;-1;-1;oldpassage_tunnel;;;
-8012;8005;canal;8012;-1;-1;-1;-1;newpassage_tunnel3;;;
-8005;350;canal;8005;-1;-1;-1;-1;silent_tunnel;;;
-526;2940;canal;526;-1;-1;-1;-1;tungr_tunnel;;;
+912;8003;canal;912;-1;-1;-1;-1;anvilwright>newpassage1
+8003;8004;canal;8003;-1;-1;-1;-1;newpassage1>newpassage2
+8004;263;canal;8004;-1;-1;-1;-1;newpassage2>oldpassage
+263;8012;canal;263;-1;-1;-1;-1;oldpassage>newpassage3
+8012;8005;canal;8012;-1;-1;-1;-1;newpassage3>silentpassage
+8005;350;canal;8005;-1;-1;-1;-1;silentpassage>silentrepose
+526;2940;canal;526;-1;-1;-1;-1;tungr_tunnel
 
 -1;-1;;-1;-1;-1;-1;-1;-1;

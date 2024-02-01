@@ -374,46 +374,30 @@ province_event = {
 	desc = tunnel_events.2.d
 	picture = FORT_eventPicture
 	goto = 526
-	
+
 	hidden = yes
 	is_triggered_only = yes
-	
-	#trigger = {
-	#	always = yes
-	#}
-	
-	
-		
+
 	option = {
         name = tunnel_events.2.a
         ai_chance = { factor = 100 }
 		goto = 526
 		2940 = {
-
 			if = {
 				limit = {
 					has_construction = great_project
 				}
 				cancel_construction = yes
-			
 			}
-
-
 			destroy_great_project = {
 				type = tungr_tunnel_ranger
 			}
 		}		
-		
-		
+
 		owner = {
 			add_prestige = 1
-		
-
 		}
-
 	}
-				
-	
 }
 
 ##tungr build tunnel
@@ -481,11 +465,8 @@ country_event = {
 			}
 			owns = 526
 		}
-		
-		
-		
 	}
-	
+
 	option = {
         name = tunnel_events.7.a
         ai_chance = { factor = 100 }
@@ -497,7 +478,6 @@ country_event = {
 			
 		}
 		hidden_effect = { set_global_flag = tungr_canal }
-		
 	}
 }
 
@@ -509,13 +489,11 @@ province_event = {
 	picture = FORT_eventPicture
 	goto = root
 	is_triggered_only = yes
-	
+
 	trigger = {
 		always = yes
 	}
-	
-	
-		
+
 	option = {
         name = tunnel_events.12.a
         ai_chance = { factor = 100 }
@@ -529,7 +507,5 @@ province_event = {
 		owner = {
 			add_prestige = 5
 		}		
-		
 	}
-	
 }

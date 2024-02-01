@@ -56,13 +56,11 @@ anvilwright_tunnel = {
 	#what to do when it's built
 	on_built = {
 		add_canal = anvilwright_tunnel
-		#set_global_flag = marrhold_canal
 	}
 
 	#what to do when it's destroyed
 	on_destroyed = {
 		remove_canal = anvilwright_tunnel
-		#clr_global_flag = marrhold_canal
 	}
 
 	#can our country use it?
@@ -256,13 +254,11 @@ newpassage_tunnel1 = {
 	#what to do when it's built
 	on_built = {
 		add_canal = newpassage_tunnel1
-		#set_global_flag = marrhold_canal
 	}
 
 	#what to do when it's destroyed
 	on_destroyed = {
 		remove_canal = newpassage_tunnel1
-		#clr_global_flag = marrhold_canal
 	}
 
 	#can our country use it?
@@ -456,13 +452,11 @@ newpassage_tunnel2 = {
 	#what to do when it's built
 	on_built = {
 		add_canal = newpassage_tunnel2
-		#set_global_flag = marrhold_canal
 	}
 
 	#what to do when it's destroyed
 	on_destroyed = {
 		remove_canal = newpassage_tunnel2
-		#clr_global_flag = marrhold_canal
 	}
 
 	#can our country use it?
@@ -656,13 +650,11 @@ oldpassage_tunnel = {
 	#what to do when it's built
 	on_built = {
 		add_canal = oldpassage_tunnel
-		#set_global_flag = marrhold_canal
 	}
 
 	#what to do when it's destroyed
 	on_destroyed = {
 		remove_canal = oldpassage_tunnel
-		#clr_global_flag = marrhold_canal
 	}
 
 	#can our country use it?
@@ -856,13 +848,11 @@ newpassage_tunnel3 = {
 	#what to do when it's built
 	on_built = {
 		add_canal = newpassage_tunnel3
-		#set_global_flag = marrhold_canal
 	}
 
 	#what to do when it's destroyed
 	on_destroyed = {
 		remove_canal = newpassage_tunnel3
-		#clr_global_flag = marrhold_canal
 	}
 
 	#can our country use it?
@@ -1057,13 +1047,11 @@ silent_tunnel = {
 	on_built = {
 		add_canal = silent_tunnel
 		province_event = { id = tunnel_events.11 }
-		#set_global_flag = marrhold_canal
 	}
 
 	#what to do when it's destroyed
 	on_destroyed = {
 		remove_canal = silent_tunnel
-		#clr_global_flag = marrhold_canal
 	}
 
 	#can our country use it?
@@ -1319,7 +1307,6 @@ tungr_tunnel = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			province_event = { id = tunnel_events.2 }
 		}
 	}
 
@@ -1481,8 +1468,6 @@ tungr_tunnel_ranger = {
 
 	#what to do when it's built
 	on_built = {
-		#add_canal = tungr_tunnel
-		#set_global_flag = marrhold_canal
 		set_global_flag = tungr_far_canal
 		province_event = { id = tunnel_events.2 }
 		526 = {			
@@ -1493,23 +1478,11 @@ tungr_tunnel_ranger = {
 				cancel_construction = yes
 			
 			}
-			owner = {
-				
-				add_great_project = {
-					type = tungr_tunnel_copy
-					instant = yes
-				}
-				
-			}
 			add_great_project = {
 				type = tungr_tunnel_copy
 				instant = yes
 			}
-			
 		}
-		
-		
-		
 	}
 
 	#what to do when it's destroyed
@@ -1692,12 +1665,11 @@ tungr_tunnel_copy = {
 	on_built = {
 		add_canal = tungr_tunnel
 		set_global_flag = tungr_canal
-		#province_event = { id = tunnel_events.2 }
+		province_event = { id = tunnel_events.2 }
 		
 		2940 = {
 			destroy_great_project = {
 				type = tungr_tunnel_ranger
-				instant = yes
 			}
 		}
 	}
@@ -1746,7 +1718,6 @@ tungr_tunnel_copy = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			province_event = { id = tunnel_events.2 }
 		}
 	}
 

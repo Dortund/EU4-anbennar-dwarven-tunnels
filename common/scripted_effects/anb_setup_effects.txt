@@ -4753,7 +4753,7 @@ setup_vision = {
 		8005 = {
 			undiscover_country = ROOT
 		}
-		80012 = {
+		8012 = {
 			undiscover_country = ROOT
 		}
 		## Dwarven Tunnels
